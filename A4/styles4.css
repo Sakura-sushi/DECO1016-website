@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -10px -10px 0px -10px;
+    padding: 6px 10%;
+    background-color: #f8f8f8;
+}
+
+span {
+    font-family: "FontAwesome";
+    color: #a5a5a5;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-right: 150px;
+}
+
+span:hover {
+    color: #c0c0c0;
+}
+
+.tab {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #a5a5a5;
+    text-decoration: none;
+    margin-left: -160px;
+    position: absolute;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #707070;
+    text-decoration: none;
+}
+
+.user {
+    width: 5.7%;
+    height: 5.7%;
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+}
+
+.logo {
+    width: 13%;
+    height: 13%;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+}
+
+.logo2 {
+    display: none;
+}
+
+body {
+    background-color: #fcfcfc;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.search {
+    margin: 40px 50px 30px 350px;
+    position: absolute;
+    justify-content: center;
+    align-content: center;    
+    border-radius: 5%;
+}
+
+.fa-search {
+    position: absolute;
+    font-family: "FontAwesome";
+    top: 110px;
+    right: 200px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+.filter {
+    position: absolute;
+    font-family: "Nunito", sans-serif;
+    top: 109px;
+    right: 235px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8 {
+    width: 430px;
+    height: 230px;
+    box-shadow: 0 0 3px 0 grey;
+    background: #f8f8f8;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+.m1 {
+    margin: 120px 0px 10px 200px;
+}
+
+.m1:hover, 
+.m2:hover,
+.m3:hover,
+.m4:hover,
+.m5:hover,
+.m6:hover,
+.m7:hover,
+.m8:hover {
+    background-color: #f3f3f3;
+}
+
+.name1, .name2, .name3, .name4, .name5, .name6, .name7, .name8 {
+    font-family: "Asap", sans-serif;
+    margin: 0px 0px 0px 140px;
+    padding-top: 50px;
+    padding-left: 130px;
+}
+
+.location1, .location2, .location3, .location4, .location5, .location6, .location7, .location8 {
+    text-align: right;
+    font-size: 16px;
+}
+
+.location1 {
+    margin: 9px 87px 0px 0px;
+}
+
+.job1, .job2, .job3, .job4, .job5, .job6, .job7, .job8 {
+    text-align: right;
+    font-size: 16px;
+}
+
+.job1 {
+    margin: 1px 99px 0px 0px;
+}
+
+p:hover {
+    color: #a7a7a7;
+}
+
+h2:hover {
+    color: #5e5e5e;
+}
+
+.m1pic, .m2pic, .m3pic, .m4pic, .m5pic, .m6pic, .m7pic, .m8pic {
+    width: 14%;
+    margin: -117px 0px 0px 35px;
+    position: absolute;
+}
+
+
+.messagebutton {
+    background-color: #d74b6c;
+    margin: 40px 0px 0px 240px;
+    width: 30%;
+    position: relative;
+}
+
+.messagebutton:hover {
+    background-color: #bf4568;
+}
+
+#hearticon {
+    font-size: 170%;
+    left: 376px;
+    bottom: 35px;
+    position: relative;
+    color: #dbdbdb;
+}
+
+#hearticon:hover {
+	color: #d74b6c;
+}
+
+#hearticon:checked {
+    color: #d74b6c;
+}
+
+#hearticon:focus {
+    color: #d74b6c;
+}
+
+.m2 {
+    margin: -240px 0px 10px 800px;
+}
+
+.location2 {
+    margin: 9px 67px 0px 0px;
+}
+
+.job2 {
+    margin: 1px 31px 0px 0px;
+}
+
+.m3 {
+    margin: 20px 0px 10px 200px;
+}
+
+.location3 {
+    margin: 9px 82px 0px 0px;
+}
+
+.job3 {
+    margin: 1px 98px 0px 0px;
+}
+
+.m4 {
+    margin: -240px 0px 10px 800px;
+}
+
+.location4 {
+    margin: 9px 85px 0px 0px;
+}
+
+.job4 {
+    margin: 1px 97px 0px 0px;
+}
+
+.m5 {
+    margin: 20px 0px 10px 200px;
+}
+
+.location5 {
+    margin: 9px 88px 0px 0px;
+}
+
+.job5 {
+    margin: 1px 64px 0px 0px;
+}
+
+.m6 {
+    margin: -240px 0px 10px 800px;
+}
+
+.location6 {
+    margin: 9px 67px 0px 0px;
+}
+
+.job6 {
+    margin: 1px 120px 0px 0px;
+}
+
+.m7 {
+    margin: 20px 0px 10px 200px;
+}
+
+.location7 {
+    margin: 9px 86px 0px 0px;
+}
+
+.job7 {
+    margin: 1px 111px 0px 0px;
+}
+
+.m8 {
+    margin: -240px 0px 10px 800px;
+}
+
+.location8 {
+    margin: 9px 67px 0px 0px;
+}
+
+.job8 {
+    margin: 1px 136px 0px 0px;
+}
+
+#sidebar{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 110%;
+    background: #d74b6c;
+    right: -210px;
+    top: -12px;
+    transition: all 500ms ease;
+    font-family: "Asap", sans-serif;
+    z-index: 1;
+   }
+   
+#sidebar.active{
+    right:-2px;
+   }
+   
+#sidebar ul li{
+    color: #f8f8f8;
+    list-style: none;
+    padding: 15px 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    vertical-align: center;
+   }
+
+#e, #h, #u, #c {
+    color: #f8f8f8;
+    font-family: "FontAwesome";
+    margin: 16px 0px 0px -31px;
+    vertical-align: center;
+    position: absolute;
+}
+
+#e:hover, #h:hover, #u:hover, #c:hover {
+    color: #dddddd;
+}
+
+#sidebar li:hover {
+    color: #dddddd;
+}
+   
+#sidebar .togglebutton{
+    position: absolute;
+    right: 230px;
+    top: 20px;
+   }
+   
+#sidebar .togglebutton .sidebarline {
+    display: block;
+    width: 21px;
+    height: 5px;
+    background: #d74b6c;
+    margin: 5px 0px;
+    border-radius: 20%;
+   }
+
+@media only screen and (max-width: 600px) {
+    header {
+    margin: -10px -20px 0px -20px;
+    padding: 0px 2%;;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .logo2 {
+        display: block;
+        width: 9%;
+        margin-right: 546px;
+    }
+
+    .nav_links {
+        display: none
+    }
+
+    .user {
+        display: none;
+    }
+
+    .search {
+        margin: 45px 0px 30px 60px;
+    }
+
+    input[type="text"] {
+        width: 75%;
+        padding: 12px;
+    }
+
+    .fa-search {
+        top: 108px;
+        right: -83px;
+        font-size: 110%;
+    }
+    
+    .filter {
+        top: 106px;
+        right: -45px;
+        font-size: 110%;
+    }
+
+    .m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8 {
+        width: 270px;
+        height: 365px;
+    }
+
+    .m1, .m3, .m5, .m7 {
+        margin: 135px 0px 10px 16px;
+    }
+
+    .m3, .m5, .m7, .m4, .m6, .m8 {
+        margin-top: 18px;
+    }
+
+    .m2, .m4, .m6, .m8 {
+        margin: -375px 0px 10px 304px;
+    }
+
+    .name1, .name2, .name3, .name4, .name5, .name6, .name7, .name8 {
+        margin: 0px 0px 0px 0px;
+        padding-top: 225px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        text-align: center;        
+        vertical-align: middle;
+    }
+
+    .m1pic, .m2pic, .m3pic, .m4pic, .m5pic, .m6pic, .m7pic, .m8pic {
+        width: 33%;
+        margin: -285px 0px 0px 31px;
+    }
+
+    .location1, .location2, .location3, .location4, .location5, .location6, .location7, .location8 {
+        text-align: center;        
+        vertical-align: middle;
+        margin: 0px;
+    }
+    
+    .job1, .job2, .job3, .job4, .job5, .job6, .job7, .job8 {
+        text-align: center;        
+        vertical-align: middle;
+        margin: 0px;
+    }
+    
+    .messagebutton {
+        margin: 8px 0px 0px 13px;
+        width: 68%;
+        position: relative;
+    }
+
+    #hearticon {
+        left: 208px;
+        bottom: 38px;
+        font-size: 200%;
+    }
+    
+    #sidebar {
+        display: block;
+    }
+}

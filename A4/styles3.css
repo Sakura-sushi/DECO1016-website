@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -10px -10px 0px -10px;
+    padding: 6px 10%;
+    background-color: #f8f8f8;
+}
+
+a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #707070;
+    text-decoration: none;
+}
+
+.logo {
+    width: 13%;
+    height: 13%;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+}
+
+.signupbutton {
+    width: 125px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #d74b6c;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.signupbutton:hover {
+    background-color: #bf4568;
+}
+
+body {
+    background-image: url("Login_background.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.login {
+    width: 350px;
+    height: 520px;
+    box-shadow: 0 0 3px 0 grey;
+    background: #f8f8f8;
+    padding: 0px;
+    margin: 75px 0px 10px 120px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.headline {
+    height: 50px;
+    padding: 50px 30px 50px 80px;
+    margin: 100px 100px 150px 80px;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+}
+
+.login h1 {
+    color: #494949;
+    margin: 20px 0px 10px 0px;
+    padding: 45px 0px 20px 0px ;
+    font-family: "Asap", sans-serif;
+}
+
+.email {
+    margin: 10px;
+    padding: 15px 0px 0px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.email-input {
+    width: 280px;
+    margin: -4px 0px 0px 0px;
+    align-content: left;
+    font-size: 16px;
+    border: none;
+}
+
+.password {
+    margin: 10px;
+    padding: 15px 0px 0px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.password-input {
+    width: 280px;
+    margin: -4px 0px 0px 0px;
+    align-content: left;
+    font-size: 16px;
+    border: none;
+}
+
+input[type=email], 
+input[type=password] {
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.loginbutton {
+    background-color: #d74b6c;
+    margin-top: 65px;
+}
+
+.loginbutton:hover {
+    background-color: #bf4568;
+}
+
+
+.socialmediabutton {
+    background-color: #3b4262;
+    margin-top: 13px;
+}
+
+.socialmediabutton:hover {
+    background-color: #2a2f44;
+}
+
+
+hr {
+    margin-top: 13px;
+    width: 81%;
+}
+
+.or {
+    width: 60px;
+    padding: 1px 1px 1px 1px;
+    margin: -17px auto 0px;
+    background-color: #f8f8f8;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+    margin: -20px -20px 0px -20px;
+    padding: 0px 2%;;
+    }
+
+    .logo {
+        width: 27%;
+        height: 27%;
+        left: 35px;
+        margin-top: 6px;
+    }
+
+    .signupbutton {
+        width: 60%;
+        margin-top: 19.5px;
+        margin-right: 75px;
+    }
+
+    body {
+        background-image: url("Login_background2.jpg");
+        background-position: top;
+    }
+
+    .login {
+        width: 600px;
+        height: 378px;
+        text-align: center;
+        margin: 250px 0px 0px -8px;
+        border-radius: 0px;
+    }
+    
+    .headline {
+        background-color: #f8f8f8;
+    }
+
+    .login h1 {
+        padding: 16px 0px 0px 0px ;
+    }
+    
+    .email {
+        margin-top: -13px;
+        padding: 0px 0px 0px 60px;
+        font-size: 18px;
+    }
+    
+    .password {
+        padding: 5px 0px 0px 60px;     
+        font-size: 18px;
+    }
+    
+    input[type=email], 
+    input[type=password] {
+        padding: 8px;
+    }
+
+    .loginbutton {
+        margin-top: 28px;
+    }
+}

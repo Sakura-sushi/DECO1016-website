@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -10px -10px 0px -10px;
+    padding: 6px 10%;
+    background-color: #f8f8f8;
+}
+
+li, a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #707070;
+    text-decoration: none;
+}
+
+.logo {
+    width: 13%;
+    height: 13%;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #c0c0c0;
+}
+
+.loginbutton {
+    width: 125px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #d74b6c;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.loginbutton:hover {
+    background-color: #bf4568;
+}
+
+body {
+    background-image: url("landing_page_background.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.signup {
+    width: 350px;
+    height: 520px;
+    box-shadow: 0 0 3px 0 grey;
+    background: #f8f8f8;
+    padding: 0px;
+    margin: 75px 0px 10px 120px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.headline {
+    height: 50px;
+    padding: 50px 30px 50px 80px;
+    margin: 100px 100px 150px 80px;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+}
+
+.signup h1 {
+    color: #494949;
+    margin: 20px 0px 10px 0px;
+    padding: 45px 0px 20px 0px ;
+    font-family: "Asap", sans-serif;
+}
+
+.I-am-a {
+    margin: 10px;
+    padding: 20px 0px 0px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.Seeking-a {
+    margin: 10px;
+    padding: 20px 0px 10px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.First-name {
+    margin: 10px;
+    padding: 10px 0px 0px 25px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.First-name-input {
+    width: 280px;
+    margin: -4px 0px 30px 0px;
+    align-content: left;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 10px;
+}
+
+.signupbutton {
+    background-color: #d74b6c;
+    margin-top: 28px;
+}
+
+.signupbutton:hover {
+    background-color: #bf4568;
+}
+
+.socialmediabutton {
+    background-color: #3b4262;
+    margin-top: 13px;
+}
+
+.socialmediabutton:hover {
+    background-color: #2a2f44;
+}
+
+
+hr {
+    margin-top: 13px;
+    width: 81%;
+}
+
+.or {
+    width: 60px;
+    padding: 1px 1px 1px 1px;
+    margin: -17px auto 0px;
+    background-color: #f8f8f8;
+}
+
+.smalltext {
+    margin-top: -8px
+}
+
+
+svg {
+	fill: hotpink;
+	height: 3.6rem;
+    width: 3.6rem;
+    bottom: 1000px;
+}
+
+#radios label {
+	position: fixed;
+}
+
+input[type="radio"] {
+	position: fixed;
+	opacity: 0;
+}
+
+input[type="radio"] + svg {
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+input + svg {
+	cursor: pointer;
+}
+
+input[class="super-happy"]:hover + svg,
+input[class="super-happy"]:checked + svg,
+input[class="super-happy"]:focus + svg {
+	fill: rgb(0, 109, 217);
+}
