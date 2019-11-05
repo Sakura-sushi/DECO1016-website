@@ -118,21 +118,21 @@ body {
 
 .I-am-a {
     margin: 10px;
-    padding: 20px 0px 0px 25px;
+    padding: 30px 0px 0px 25px;
     text-align: left;
     font-size: 16px;
 }
 
 .Seeking-a {
     margin: 10px;
-    padding: 20px 0px 10px 25px;
+    padding: 33px 0px 10px 25px;
     text-align: left;
     font-size: 16px;
 }
 
 .First-name {
     margin: 10px;
-    padding: 10px 0px 0px 25px;
+    padding: 16px 0px 0px 25px;
     text-align: left;
     font-size: 16px;
 }
@@ -153,7 +153,7 @@ input[type=text] {
 
 .signupbutton {
     background-color: #d74b6c;
-    margin-top: 28px;
+    margin-top: 2px;
 }
 
 .signupbutton:hover {
@@ -162,7 +162,7 @@ input[type=text] {
 
 .socialmediabutton {
     background-color: #3b4262;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 .socialmediabutton:hover {
@@ -171,7 +171,7 @@ input[type=text] {
 
 
 hr {
-    margin-top: 13px;
+    margin-top: 10px;
     width: 81%;
 }
 
@@ -188,11 +188,22 @@ hr {
 
 
 svg {
-	fill: hotpink;
 	height: 3.6rem;
     width: 3.6rem;
-    bottom: 1000px;
 }
+
+.form-group1 {
+    display: inline-block;
+    margin: -52px 0px 0px -6px;
+    position: absolute;
+}
+
+.form-group2 {
+    display: inline-block;
+    margin: -60px 0px 0px -6px;
+    position: absolute;
+}
+
 
 #radios label {
 	position: fixed;
@@ -212,8 +223,92 @@ input + svg {
 	cursor: pointer;
 }
 
-input[class="super-happy"]:hover + svg,
-input[class="super-happy"]:checked + svg,
-input[class="super-happy"]:focus + svg {
-	fill: rgb(0, 109, 217);
+input[class="male"]:hover + svg > path,
+input[class="male"]:checked + svg > path,
+input[class="male"]:focus + svg > path{
+	fill: lightskyblue;
+}
+
+input[class="female"]:hover + svg > path,
+input[class="female"]:checked + svg > path,
+input[class="female"]:focus + svg > path{
+	fill: hotpink;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+    margin: -20px -20px 0px -20px;
+    padding: 0px 2%;
+    width: 590px;
+    }
+
+    .logo {
+        width: 27%;
+        height: 27%;
+        left: 35px;
+        margin-top: 6px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .loginbutton {
+        width: 60%;
+        margin-top: 19.5px;
+        margin-right: 75px;
+    }
+
+    body {
+        background-image: url("landing_page_background2.jpg");
+        background-position: top;
+    }
+
+    .signup {
+        width: 600px;
+        height: 437px;
+        text-align: center;
+        margin: 250px 0px 0px -8px;
+        border-radius: 0px;
+    }
+    
+    .headline {
+        background-color: #f8f8f8;
+    }
+
+    .signup h1 {
+        padding: 16px 0px 0px 0px ;
+    }
+    
+    .I-am-a {
+        margin-top: -13px;
+        padding: 18px 0px 0px 60px;
+        font-size: 18px;
+    }
+    
+    .Seeking-a {
+        padding: 25px 0px 0px 60px;     
+        font-size: 18px;
+    }
+
+    .form-group1 {
+        margin: -56px 0px 0px -6px;
+    }
+
+    .form-group2 {
+        margin: -55px 0px 0px -6px;
+    }
+
+    .First-name {
+        padding: 22px 0px 0px 60px;     
+        font-size: 18px;
+    }
+    
+    input[type=text] {
+        padding: 8px;
+    }
+
+    .signupbutton {
+        margin-top: 0px;
+    }
 }
