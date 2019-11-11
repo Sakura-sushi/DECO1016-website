@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
-
+/* Fonts used */
 
 header {
     display: flex;
@@ -10,6 +10,7 @@ header {
     padding: 6px 10%;
     background-color: #f8f8f8;
 }
+/* Style: top bar */
 
 li, a {
     font-family: "Nunito", sans-serif;
@@ -18,6 +19,7 @@ li, a {
     color: #a5a5a5;
     text-decoration: none;
 }
+/* Style: navigation tabs */
 
 button {
     font-family: "Nunito", sans-serif;
@@ -32,6 +34,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+/* Style: buttons */
 
 p {
     font-family: "Nunito", sans-serif;
@@ -40,6 +43,7 @@ p {
     color: #707070;
     text-decoration: none;
 }
+/* Style: normal text */
 
 .logo {
     width: 13%;
@@ -48,23 +52,28 @@ p {
     position: absolute;
     left: 130px;
 }
+/* Style: logo */
 
 .nav_links {
     list-style: none;
 }
+/* Style: navigation tabs */
 
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
+/* Style: navigation tabs */
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
+/* Style: navigation tabs */
 
 .nav_links li a:hover {
     color: #c0c0c0;
 }
+/* Style: navigation tabs interactivity */
 
 .loginbutton {
     width: 125px;
@@ -78,10 +87,12 @@ p {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+/* Style: login button (top right corner) */
 
 .loginbutton:hover {
     background-color: #bf4568;
 }
+/* Style: login button interactivity */
 
 body {
     background-image: url("landing_page_background.jpg");
@@ -89,6 +100,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
 }
+/* Style: Background image */
 
 .signup {
     width: 350px;
@@ -100,6 +112,7 @@ body {
     text-align: center;
     border-radius: 25px;
 }
+/* Style: sign up form */
 
 .headline {
     height: 50px;
@@ -108,6 +121,7 @@ body {
     background-color: #f3f3f3;
     border-radius: 25px;
 }
+/* Style: background colour of headline on top of sign up form */
 
 .signup h1 {
     color: #494949;
@@ -115,6 +129,7 @@ body {
     padding: 45px 0px 20px 0px ;
     font-family: "Asap", sans-serif;
 }
+/* Style: headline on top of sign up form */
 
 .I-am-a {
     margin: 10px;
@@ -122,6 +137,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: First sign up form request */
 
 .Seeking-a {
     margin: 10px;
@@ -129,6 +145,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: Second sign up form request */
 
 .First-name {
     margin: 10px;
@@ -136,6 +153,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: Third sign up form request */
 
 .First-name-input {
     width: 280px;
@@ -145,35 +163,41 @@ body {
     border: none;
     border-radius: 10px;
 }
+/* Style: Third sign up form user input */
 
 input[type=text] {
     width: 75%;
     padding: 10px;
 }
+/* Style: Third sign up form user input */
 
 .signupbutton {
     background-color: #d74b6c;
     margin-top: 2px;
 }
+/* Style: Sign up button */
 
 .signupbutton:hover {
     background-color: #bf4568;
 }
+/* Style: Sign up button */
 
 .socialmediabutton {
     background-color: #3b4262;
     margin-top: 10px;
 }
+/* Style: Social autofill button */
 
 .socialmediabutton:hover {
     background-color: #2a2f44;
 }
-
+/* Style: Social autofill button */
 
 hr {
     margin-top: 10px;
     width: 81%;
 }
+/* Style: Line besides 'OR' */
 
 .or {
     width: 60px;
@@ -181,61 +205,71 @@ hr {
     margin: -17px auto 0px;
     background-color: #f8f8f8;
 }
+/* Style: 'OR' in-between 'Sign up' and 'Sign up with Facebook' */
 
 .smalltext {
     margin-top: -8px
 }
-
+/* Style: Small message - 'We never post to Facebook' */
 
 svg {
 	height: 3.6rem;
     width: 3.6rem;
 }
+/* Style: Gender radio icons */
 
 .form-group1 {
     display: inline-block;
     margin: -52px 0px 0px -6px;
     position: absolute;
 }
+/* Style: First user inputs */
 
 .form-group2 {
     display: inline-block;
     margin: -60px 0px 0px -6px;
     position: absolute;
 }
-
+/* Style: Second user inputs */
 
 #radios label {
 	position: fixed;
 }
+/* Style: Radio user inputs */
 
 input[type="radio"] {
 	position: fixed;
 	opacity: 0;
 }
+/* Style: Gender radio inputs */
 
 input[type="radio"] + svg {
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 }
+/* Style: Gender radio inputs */
 
 input + svg {
 	cursor: pointer;
 }
+/* Style: Gender radio inputs */
 
 input[class="male"]:hover + svg > path,
 input[class="male"]:checked + svg > path,
 input[class="male"]:focus + svg > path{
 	fill: lightskyblue;
 }
+/* Style: Male radio input interactivity */
 
 input[class="female"]:hover + svg > path,
 input[class="female"]:checked + svg > path,
 input[class="female"]:focus + svg > path{
 	fill: hotpink;
 }
+/* Style: Female radio input interactivity */
 
 @media only screen and (max-width: 600px) {
+    /* Style: Mobile version */
     header {
     margin: -20px -20px 0px -20px;
     padding: 0px 2%;
@@ -266,7 +300,7 @@ input[class="female"]:focus + svg > path{
 
     .signup {
         width: 600px;
-        height: 437px;
+        height: 480px;
         text-align: center;
         margin: 250px 0px 0px -8px;
         border-radius: 0px;
@@ -277,11 +311,11 @@ input[class="female"]:focus + svg > path{
     }
 
     .signup h1 {
-        padding: 16px 0px 0px 0px ;
+        padding: 24px 0px 0px 0px ;
     }
     
     .I-am-a {
-        margin-top: -13px;
+        margin-top: 14px;
         padding: 18px 0px 0px 60px;
         font-size: 18px;
     }
@@ -309,6 +343,6 @@ input[class="female"]:focus + svg > path{
     }
 
     .signupbutton {
-        margin-top: 0px;
+        margin-top: 16px;
     }
 }

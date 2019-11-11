@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
-
+/* Fonts used */
 
 header {
     display: flex;
@@ -10,6 +10,7 @@ header {
     padding: 6px 10%;
     background-color: #f8f8f8;
 }
+/* Style: top bar */
 
 span {
     font-family: "FontAwesome";
@@ -21,10 +22,12 @@ span {
     cursor: pointer;
     margin-right: 150px;
 }
+/* Style: Icons on top navigation */
 
 span:hover {
     color: #c0c0c0;
 }
+/* Style: Icons on top navigation interactivity */
 
 .tab {
     font-family: "Nunito", sans-serif;
@@ -35,6 +38,7 @@ span:hover {
     margin-left: -160px;
     position: absolute;
 }
+/* Style: Icons on top navigation */
 
 p {
     font-family: "Nunito", sans-serif;
@@ -43,6 +47,7 @@ p {
     color: #707070;
     text-decoration: none;
 }
+/* Style: normal text */
 
 .user {
     width: 5.7%;
@@ -51,6 +56,7 @@ p {
     position: absolute;
     right: 120px;
 }
+/* Style: User profile */
 
 .logo {
     width: 13%;
@@ -59,10 +65,12 @@ p {
     position: absolute;
     left: 130px;
 }
+/* Style: logo */
 
 .logo2 {
     display: none;
 }
+/* Style: logo (mobile version) */
 
 body {
     background-color: #fcfcfc;
@@ -70,6 +78,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
 }
+/* Style: Background */
 
 .search {
     margin: 40px 50px 30px 350px;
@@ -78,6 +87,7 @@ body {
     align-content: center;    
     border-radius: 5%;
 }
+/* Style: Search bar */
 
 .fa-search {
     position: absolute;
@@ -87,6 +97,7 @@ body {
     color: #a5a5a5;
     cursor: pointer;
 }
+/* Style: Search icon */
 
 .filter {
     position: absolute;
@@ -96,11 +107,13 @@ body {
     color: #a5a5a5;
     cursor: pointer;
 }
+/* Style: Search filter */
 
 input[type="text"] {
     width: 50%;
     padding: 10px;
 }
+/* Style: Search bar input */
 
 button {
     font-family: "Nunito", sans-serif;
@@ -114,6 +127,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+/* Style: buttons */
 
 .m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8 {
     width: 430px;
@@ -124,10 +138,12 @@ button {
     cursor: pointer;
     border-radius: 1%;
 }
+/* Style: Rectangular outline of each potential interest */
 
 .m1 {
     margin: 120px 0px 10px 200px;
 }
+/* Style: Potential interest box 1 */
 
 .m1:hover, 
 .m2:hover,
@@ -139,6 +155,7 @@ button {
 .m8:hover {
     background-color: #f3f3f3;
 }
+/* Style: potential interests box interactivity */
 
 .name1, .name2, .name3, .name4, .name5, .name6, .name7, .name8 {
     font-family: "Asap", sans-serif;
@@ -146,39 +163,46 @@ button {
     padding-top: 50px;
     padding-left: 130px;
 }
+/* Style: Potential interersts' names */
 
 .location1, .location2, .location3, .location4, .location5, .location6, .location7, .location8 {
     text-align: right;
     font-size: 16px;
 }
+/* Style: Potential interersts' location */
 
 .location1 {
     margin: 9px 87px 0px 0px;
 }
+/* Style: Potential interersts' location 1 */
 
 .job1, .job2, .job3, .job4, .job5, .job6, .job7, .job8 {
     text-align: right;
     font-size: 16px;
 }
+/* Style: Potential interersts' job */
 
 .job1 {
     margin: 1px 99px 0px 0px;
 }
+/* Style: Potential interersts' job 1 */
 
 p:hover {
     color: #a7a7a7;
 }
+/* Style: Description interactivity */
 
 h2:hover {
     color: #5e5e5e;
 }
+/* Style: Name interactivity */
 
 .m1pic, .m2pic, .m3pic, .m4pic, .m5pic, .m6pic, .m7pic, .m8pic {
     width: 14%;
     margin: -117px 0px 0px 35px;
     position: absolute;
 }
-
+/* Style: Potential interersts' image */
 
 .messagebutton {
     background-color: #d74b6c;
@@ -186,114 +210,171 @@ h2:hover {
     width: 30%;
     position: relative;
 }
+/* Style: Message button */
 
 .messagebutton:hover {
     background-color: #bf4568;
 }
+/* Style: Message button interactivity */
 
-#hearticon {
-    font-size: 170%;
-    left: 376px;
-    bottom: 35px;
-    position: relative;
-    color: #dbdbdb;
-}
+#heart1, 
+#heart2,
+#heart3,
+#heart4,
+#heart5,
+#heart6,
+#heart7,
+#heart8 {
+    position: absolute;
+    left: -100px;
+  }
+/* Style: Heart icons position */
 
-#hearticon:hover {
-	color: #d74b6c;
-}
+[for='heart1'],
+[for='heart2'],
+[for='heart3'],
+[for='heart4'],
+[for='heart5'],
+[for='heart6'],
+[for='heart7'],
+[for='heart8'] {
+    font-size: 40px;
+    color: #d3d3d3;
+    cursor: pointer;
+    margin: 0px 0px 0px 9px;
+    vertical-align: middle;
+  }
+/* Style: Heart icons details */
 
-#hearticon:checked {
+[id='heart1']:checked + label,
+[id='heart2']:checked + label,
+[id='heart3']:checked + label,
+[id='heart4']:checked + label,
+[id='heart5']:checked + label,
+[id='heart6']:checked + label,
+[id='heart7']:checked + label,
+[id='heart8']:checked + label {
     color: #d74b6c;
-}
+  }
+/* Style: Heart icons interactivity */
 
-#hearticon:focus {
-    color: #d74b6c;
-}
+[id='heart1']:checked + label,
+[id='heart2']:checked + label,
+[id='heart3']:checked + label,
+[id='heart4']:checked + label,
+[id='heart5']:checked + label,
+[id='heart6']:checked + label,
+[id='heart7']:checked + label,
+[id='heart8']:checked + label {
+    will-change: font-size;
+    transition: all .22s ease-in-out;
+  }
+/* Style: Heart icons interactivity rate */
 
 .m2 {
     margin: -240px 0px 10px 800px;
 }
+/* Style: Potential interest 2 box */
 
 .location2 {
     margin: 9px 67px 0px 0px;
 }
+/* Style: Potential interest's location 2 */
 
 .job2 {
     margin: 1px 31px 0px 0px;
 }
+/* Style: Potential interest's job 2 */
 
 .m3 {
     margin: 20px 0px 10px 200px;
 }
+/* Style: Potential interest 3 box */
 
 .location3 {
     margin: 9px 82px 0px 0px;
 }
+/* Style: Potential interest's location 3 */
 
 .job3 {
     margin: 1px 98px 0px 0px;
 }
+/* Style: Potential interest's job 3 */
 
 .m4 {
     margin: -240px 0px 10px 800px;
 }
+/* Style: Potential interest 4 box */
 
 .location4 {
     margin: 9px 85px 0px 0px;
 }
+/* Style: Potential interest's location 4 */
 
 .job4 {
     margin: 1px 97px 0px 0px;
 }
+/* Style: Potential interest's job 2 */
 
 .m5 {
     margin: 20px 0px 10px 200px;
 }
+/* Style: Potential interest 5 box */
 
 .location5 {
     margin: 9px 88px 0px 0px;
 }
+/* Style: Potential interest's location 5 */
 
 .job5 {
     margin: 1px 64px 0px 0px;
 }
+/* Style: Potential interest's job 5 */
 
 .m6 {
     margin: -240px 0px 10px 800px;
 }
+/* Style: Potential interest 6 box */
 
 .location6 {
     margin: 9px 67px 0px 0px;
 }
+/* Style: Potential interest's location 6 */
 
 .job6 {
     margin: 1px 120px 0px 0px;
 }
+/* Style: Potential interest's job 6 */
 
 .m7 {
     margin: 20px 0px 10px 200px;
 }
+/* Style: Potential interest 7 box */
 
 .location7 {
     margin: 9px 86px 0px 0px;
 }
+/* Style: Potential interest's location 7 */
 
 .job7 {
     margin: 1px 111px 0px 0px;
 }
+/* Style: Potential interest's job 7 */
 
 .m8 {
     margin: -240px 0px 10px 800px;
 }
+/* Style: Potential interest 8 box */
 
 .location8 {
     margin: 9px 67px 0px 0px;
 }
+/* Style: Potential interest's location 8 */
 
 .job8 {
     margin: 1px 136px 0px 0px;
 }
+/* Style: Potential interest's job 8 */
 
 #sidebar{
     display: none;
@@ -307,11 +388,13 @@ h2:hover {
     font-family: "Asap", sans-serif;
     z-index: 1;
    }
-   
+/* Style: Sidebar (mobile version) */
+
 #sidebar.active{
     right:-2px;
    }
-   
+/* Style: Sidebar interactivity */
+
 #sidebar ul li{
     color: #f8f8f8;
     list-style: none;
@@ -321,6 +404,7 @@ h2:hover {
     border-bottom: 1px solid;
     vertical-align: center;
    }
+/* Style: Sidebar text */
 
 #e, #h, #u, #c {
     color: #f8f8f8;
@@ -329,21 +413,25 @@ h2:hover {
     vertical-align: center;
     position: absolute;
 }
+/* Style: Sidebar icons */
 
 #e:hover, #h:hover, #u:hover, #c:hover {
     color: #dddddd;
 }
+/* Style: Sidebar text interactivity */
 
 #sidebar li:hover {
     color: #dddddd;
 }
-   
+/* Style: Sidebar icon interactivity */
+
 #sidebar .togglebutton{
     position: absolute;
     right: 230px;
     top: 20px;
    }
-   
+/* Style: Sidebar toggle button */
+
 #sidebar .togglebutton .sidebarline {
     display: block;
     width: 21px;
@@ -352,8 +440,10 @@ h2:hover {
     margin: 5px 0px;
     border-radius: 20%;
    }
+/* Style: Sidebar toggle button */
 
 @media only screen and (max-width: 600px) {
+    /* Mobile version */
     header {
     margin: -10px -20px 0px -20px;
     padding: 0px 2%;;
@@ -404,7 +494,7 @@ h2:hover {
     }
 
     .m1, .m3, .m5, .m7 {
-        margin: 135px 0px 10px 16px;
+        margin: 135px 0px 10px 14px;
     }
 
     .m3, .m5, .m7, .m4, .m6, .m8 {
@@ -412,7 +502,7 @@ h2:hover {
     }
 
     .m2, .m4, .m6, .m8 {
-        margin: -375px 0px 10px 304px;
+        margin: -375px 0px 10px 302px;
     }
 
     .name1, .name2, .name3, .name4, .name5, .name6, .name7, .name8 {
@@ -456,4 +546,15 @@ h2:hover {
     #sidebar {
         display: block;
     }
+
+    [for='heart1'],
+    [for='heart2'],
+    [for='heart3'],
+    [for='heart4'],
+    [for='heart5'],
+    [for='heart6'],
+    [for='heart7'],
+    [for='heart8'] {
+        margin: 0px 0px 0px 16px;
+      }
 }

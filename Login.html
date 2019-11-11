@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>EastMeetEast</title>
-<link rel="stylesheet" type="text/css" href="styles3.css">
-<script src="A4.js"></script>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>EastMeetEast - Login</title>
+    <link rel="stylesheet" type="text/css" href="styles3.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 </head>
-    <body>
-        <header>
-            <img class="logo" src="EastMeetEast_logo.svg" alt="logo">
-            <a href="A4.html" target="_self" class="signup" href="#"><button class="signupbutton">Sign up</button></a>
-        </header>
+
+<body>
+    <header>
+        <img class="logo" src="EastMeetEast_logo.svg" alt="logo">
+        <!--- Company logo --->
+        <a href="index.html" target="_self" class="signup" href="#"><button class="signupbutton">Sign up</button></a>
+        <!--- Button that goes to sign up page --->
+    </header>
     <div class="login">
+        <!--- Login form --->
         <h1 class="headline">Welcome back!</h1>
         <form>
-        <p class="email"> Email </p>
-        <input class="email-input" type="email" name="email">
-        <p class="password"> Password </p>
-        <input class="password-input" type="password" name="password">
-            <a href="Membership.html" target="_self"><button type="button" class="loginbutton">Login</button></a>
+            <p class="email"> Email </p>
+            <input class="email-input" type="email" name="email" id="email">
+            <!--- Request & input of user's email --->
+            <p class="password"> Password </p>
+            <input class="password-input" type="password" name="password" id="password">
+            <!--- Request & input of user's password --->
+            <button type="button" class="loginbutton" id="loginbutton">Login</button>
+            <!--- Login button --->
             <hr>
             <p class="or">OR</p>
             <button type="button" class="socialmediabutton">Login with Facebook</button>
+            <!--- Social autofill button --->
         </form>
-</div>
+    </div>
 </body>
+<script src="Login.js"></script>
+
 </html>

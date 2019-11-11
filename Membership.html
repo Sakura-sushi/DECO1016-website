@@ -1,106 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>EastMeetEast</title>
-<link rel="stylesheet" type="text/css" href="styles4.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="Membership.js"></script>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>EastMeetEast - Membership Endpoint</title>
+    <link rel="stylesheet" type="text/css" href="styles4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 </head>
-    <body>
-        <header>
-            <img class="logo" src="EastMeetEast_logo.svg" alt="logo">
-            <img class="logo2" src="logo2.png" alt="logo2">
-            <img class="user" src="Avatar_image.svg" alt="logo">
-            <nav>
-                <ul class="nav_links">
-                        <span class="far fa-envelope"></span> <span class="tab">Messages</span> 
-                        <span class="far fa-heart"></span> <span class="tab">Interests</span> 
-                        <span class="far fa-user"></span> <span class="tab">Visitors</span> 
-                </ul> 
-            </nav>
-            <div id="sidebar">
-                <div class="togglebutton" onclick="toggleSidebar()">
-                    <span class="sidebarline"></span>
-                    <span class="sidebarline"></span>
-                    <span class="sidebarline"></span>
-                </div>
-                    <ul>
-                        <span id="e" class="far fa-envelope"></span><li> Messages</li>
-                        <span id="h" class="far fa-heart"></span><li> Interests</li>
-                        <span id="u" class="far fa-user"></span><li> Visitors</li>
-                        <span id="c" class="far fa-cog"></span><li> Profile</li>
-                    </ul>
+
+<body>
+    <header>
+        <img class="logo" src="EastMeetEast_logo.svg" alt="logo">
+        <!--- Company logo --->
+        <img class="logo2" src="logo2.png" alt="logo2">
+        <!--- Company logo (mobile version) --->
+        <img class="user" src="Avatar_image.svg" alt="logo">
+        <!--- User profile --->
+        <nav>
+            <ul class="nav_links">
+                <!--- Top navigation bar --->
+                <span class="far fa-envelope"></span> <span class="tab">Messages</span>
+                <span class="far fa-heart"></span> <span class="tab">Interests</span>
+                <span class="far fa-user"></span> <span class="tab">Visitors</span>
+            </ul>
+        </nav>
+        <div id="sidebar">
+            <!--- Sidebar (mobile version) --->
+            <div class="togglebutton" onclick="toggleSidebar()">
+                <span class="sidebarline"></span>
+                <span class="sidebarline"></span>
+                <span class="sidebarline"></span>
             </div>
-        </header>
+            <ul>
+                <span id="e" class="far fa-envelope"></span>
+                <li> Messages</li>
+                <span id="h" class="far fa-heart"></span>
+                <li> Interests</li>
+                <span id="u" class="far fa-user"></span>
+                <li> Visitors</li>
+                <span id="c" class="far fa-cog"></span>
+                <li> Profile</li>
+            </ul>
+        </div>
+    </header>
     <div class="searchbar">
-    <input type="text" class="search" name="search">
-    <span class="fas fa-search"></span>
-    <span class="filter">Filter</span>
+        <!--- Search bar --->
+        <input type="text" class="search" name="search" id="search">
+        <span class="fas fa-search" id="searchbutton"></span>
+        <span class="filter">Filter</span>
     </div>
     <div class="m1">
+        <!--- Potential interest 1 --->
         <h2 class="name1">Amy, 26</h2>
         <p class="location1">New York</p>
         <p class="job1">Teacher</p>
+        <!--- Description 1 --->
         <img class="m1pic" src="m1.png" alt="m1pic">
-            <button type="button" class="messagebutton">Message</button>
-            <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 1 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 1 --->
+        <input id="heart1" type="checkbox" />
+        <label for="heart1">❤</label>
+        <!--- Heart icon 1 --->
     </div>
     <div class="m2">
+        <!--- Potential interest 2 --->
         <h2 class="name2">Lisa, 30</h2>
         <p class="location2">Los Angeles</p>
         <p class="job2">Fashion Designer</p>
+        <!--- Description 2 --->
         <img class="m2pic" src="m2.png" alt="m2pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 2 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 2 --->
+        <input id="heart2" type="checkbox" />
+        <label for="heart2">❤</label>
+        <!--- Heart icon 2 --->
     </div>
     <div class="m3">
+        <!--- Potential interest 3 --->
         <h2 class="name3">Sophie, 24</h2>
         <p class="location3">Las Vegas</p>
         <p class="job3">Student</p>
+        <!--- Description 3 --->
         <img class="m3pic" src="m3.png" alt="m3pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 3 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 3 --->
+        <input id="heart3" type="checkbox" />
+        <label for="heart3">❤</label>
+        <!--- Heart icon 3 --->
     </div>
     <div class="m4">
+        <!--- Potential interest 4 --->
         <h2 class="name4">Wendy, 28</h2>
         <p class="location4">New York</p>
         <p class="job4">Barister</p>
+        <!--- Description 4 --->
         <img class="m4pic" src="m4.png" alt="m4pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 4 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 4 --->
+        <input id="heart4" type="checkbox" />
+        <label for="heart4">❤</label>
+        <!--- Heart icon 4 --->
     </div>
     <div class="m5">
+        <!--- Potential interest 5 --->
         <h2 class="name5">Julli, 34</h2>
         <p class="location5">New York</p>
         <p class="job5">Entrepreneur</p>
+        <!--- Description 5 --->
         <img class="m5pic" src="m5.png" alt="m5pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 5 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 5 --->
+        <input id="heart5" type="checkbox" />
+        <label for="heart5">❤</label>
+        <!--- Heart icon 5 --->
     </div>
     <div class="m6">
+        <!--- Potential interest 6 --->
         <h2 class="name6">Linda, 29</h2>
         <p class="location6">Los Angeles</p>
         <p class="job6">Chef</p>
+        <!--- Description 6 --->
         <img class="m6pic" src="m6.png" alt="m6pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 6 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 6 --->
+        <input id="heart6" type="checkbox" />
+        <label for="heart6">❤</label>
+        <!--- Heart icon 6 --->
     </div>
     <div class="m7">
+        <!--- Potential interest 7 --->
         <h2 class="name7">Tess, 25</h2>
         <p class="location7">New York</p>
         <p class="job7">Nurse</p>
+        <!--- Description 7 --->
         <img class="m7pic" src="m7.png" alt="m7pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 7 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 7 --->
+        <input id="heart7" type="checkbox" />
+        <label for="heart7">❤</label>
+        <!--- Heart icon 7 --->
     </div>
     <div class="m8">
+        <!--- Potential interest 8 --->
         <h2 class="name8">Jessica, 24</h2>
         <p class="location8">Los Angeles</p>
         <p class="job8">DJ</p>
+        <!--- Description 8 --->
         <img class="m8pic" src="m8.png" alt="m8pic">
-            <button type="button" class="messagebutton">Message</button>
-        <span id="hearticon" class="far fa-heart"></span>
+        <!--- Image 8 --->
+        <button type="button" class="messagebutton">Message</button>
+        <!--- Message button 8 --->
+        <input id="heart8" type="checkbox" />
+        <label for="heart8">❤</label>
+        <!--- Heart icon 8 --->
     </div>
 </body>
+<script src="Membership.js"></script>
+
 </html>

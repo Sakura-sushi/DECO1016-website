@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
-
+/* Fonts used */
 
 header {
     display: flex;
@@ -10,14 +10,8 @@ header {
     padding: 6px 10%;
     background-color: #f8f8f8;
 }
+/* Style: top bar */
 
-a {
-    font-family: "Nunito", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #a5a5a5;
-    text-decoration: none;
-}
 
 button {
     font-family: "Nunito", sans-serif;
@@ -32,6 +26,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+/* Style: buttons */
 
 p {
     font-family: "Nunito", sans-serif;
@@ -40,6 +35,7 @@ p {
     color: #707070;
     text-decoration: none;
 }
+/* Style: normal text */
 
 .logo {
     width: 13%;
@@ -48,6 +44,7 @@ p {
     position: absolute;
     left: 130px;
 }
+/* Style: logo */
 
 .signupbutton {
     width: 125px;
@@ -61,10 +58,12 @@ p {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+/* Style: sign up button (top right corner) */
 
 .signupbutton:hover {
     background-color: #bf4568;
 }
+/* Style: sign up button interactivity */
 
 body {
     background-image: url("Login_background.jpg");
@@ -72,6 +71,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
 }
+/* Style: Background image */
 
 .login {
     width: 350px;
@@ -83,6 +83,7 @@ body {
     text-align: center;
     border-radius: 25px;
 }
+/* Style: login form */
 
 .headline {
     height: 50px;
@@ -91,6 +92,7 @@ body {
     background-color: #f3f3f3;
     border-radius: 25px;
 }
+/* Style: background colour of headline on top of login form */
 
 .login h1 {
     color: #494949;
@@ -98,6 +100,7 @@ body {
     padding: 45px 0px 20px 0px ;
     font-family: "Asap", sans-serif;
 }
+/* Style: headline on top of login form */
 
 .email {
     margin: 10px;
@@ -105,6 +108,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: First login form request */
 
 .email-input {
     width: 280px;
@@ -113,6 +117,7 @@ body {
     font-size: 16px;
     border: none;
 }
+/* Style: First login form input */
 
 .password {
     margin: 10px;
@@ -120,6 +125,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: Second login form request */
 
 .password-input {
     width: 280px;
@@ -128,6 +134,7 @@ body {
     font-size: 16px;
     border: none;
 }
+/* Style: Second login form input */
 
 input[type=email], 
 input[type=password] {
@@ -135,31 +142,35 @@ input[type=password] {
     padding: 10px;
     border-radius: 10px;
 }
+/* Style: User inputs */
 
 .loginbutton {
     background-color: #d74b6c;
     margin-top: 65px;
 }
+/* Style: Login button */
 
 .loginbutton:hover {
     background-color: #bf4568;
 }
-
+/* Style: Login button interactivity */
 
 .socialmediabutton {
     background-color: #3b4262;
     margin-top: 13px;
 }
+/* Style: Social autofill button */
 
 .socialmediabutton:hover {
     background-color: #2a2f44;
 }
-
+/* Style: Social autofill button interactivity */
 
 hr {
     margin-top: 13px;
     width: 81%;
 }
+/* Style: Line besides 'OR' */
 
 .or {
     width: 60px;
@@ -167,8 +178,10 @@ hr {
     margin: -17px auto 0px;
     background-color: #f8f8f8;
 }
+/* Style: 'OR' in-between 'Login' and 'Login with Facebook' */
 
 @media only screen and (max-width: 600px) {
+    /* Style: Mobile version */
     header {
     margin: -20px -20px 0px -20px;
     padding: 0px 2%;;
@@ -194,7 +207,7 @@ hr {
 
     .login {
         width: 600px;
-        height: 378px;
+        height: 480px;
         text-align: center;
         margin: 250px 0px 0px -8px;
         border-radius: 0px;
@@ -205,17 +218,17 @@ hr {
     }
 
     .login h1 {
-        padding: 16px 0px 0px 0px ;
+        padding: 24px 0px 0px 0px ;
     }
     
     .email {
-        margin-top: -13px;
+        margin-top: 0px;
         padding: 0px 0px 0px 60px;
         font-size: 18px;
     }
     
     .password {
-        padding: 5px 0px 0px 60px;     
+        padding: 16px 0px 0px 60px;     
         font-size: 18px;
     }
     
@@ -225,6 +238,6 @@ hr {
     }
 
     .loginbutton {
-        margin-top: 28px;
+        margin-top: 61px;
     }
 }

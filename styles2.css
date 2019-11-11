@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
-
+/* Fonts used */
 
 header {
     display: flex;
@@ -10,6 +10,7 @@ header {
     padding: 6px 10%;
     background-color: #f8f8f8;
 }
+/* Style: top bar */
 
 li, a {
     font-family: "Nunito", sans-serif;
@@ -18,6 +19,7 @@ li, a {
     color: #a5a5a5;
     text-decoration: none;
 }
+/* Style: navigation tabs */
 
 button {
     font-family: "Nunito", sans-serif;
@@ -32,6 +34,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+/* Style: buttons */
 
 p {
     font-family: "Nunito", sans-serif;
@@ -40,6 +43,7 @@ p {
     color: #707070;
     text-decoration: none;
 }
+/* Style: normal text */
 
 .logo {
     width: 13%;
@@ -48,23 +52,28 @@ p {
     position: absolute;
     left: 130px;
 }
+/* Style: logo */
 
 .nav_links {
     list-style: none;
 }
+/* Style: navigation tabs */
 
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
+/* Style: navigation tabs */
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
+/* Style: navigation tabs */
 
 .nav_links li a:hover {
     color: #c0c0c0;
 }
+/* Style: navigation tabs interactivity */
 
 .loginbutton {
     width: 125px;
@@ -78,10 +87,12 @@ p {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+/* Style: login button (top right corner) */
 
 .loginbutton:hover {
     background-color: #bf4568;
 }
+/* Style: login button interactivity */
 
 body {
     background-image: url("Signup2_background2.jpg");
@@ -89,6 +100,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
 }
+/* Style: Background image */
 
 .signup {
     width: 350px;
@@ -100,6 +112,7 @@ body {
     text-align: center;
     border-radius: 25px;
 }
+/* Style: sign up form */
 
 .headline {
     height: 50px;
@@ -108,6 +121,7 @@ body {
     background-color: #f3f3f3;
     border-radius: 25px;
 }
+/* Style: background colour of headline on top of sign up form */
 
 .signup h1 {
     color: #494949;
@@ -115,6 +129,7 @@ body {
     padding: 45px 0px 20px 0px ;
     font-family: "Asap", sans-serif;
 }
+/* Style: headline on top of sign up form */
 
 .zipcode {
     margin: 10px;
@@ -122,6 +137,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: First sign up form request */
 
 .zipcode-input {
     width: 280px;
@@ -130,6 +146,7 @@ body {
     font-size: 16px;
     border: none;
 }
+/* Style: First sign up form input */
 
 .email {
     margin: 10px;
@@ -137,6 +154,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: Second sign up form request */
 
 .email-input {
     width: 280px;
@@ -145,6 +163,7 @@ body {
     font-size: 16px;
     border: none;
 }
+/* Style: Second sign up form input */
 
 .password {
     margin: 10px;
@@ -152,6 +171,7 @@ body {
     text-align: left;
     font-size: 16px;
 }
+/* Style: Third sign up form request */
 
 .password-input {
     width: 280px;
@@ -160,6 +180,7 @@ body {
     font-size: 16px;
     border: none;
 }
+/* Style: Third sign up form input */
 
 input[type="number"],
 [type="email"],
@@ -168,17 +189,21 @@ input[type="number"],
     padding: 10px;
     border-radius: 10px;
 }
+/* Style: User inputs */
 
 .signupbutton {
     background-color: #d74b6c;
     margin-top: 40px;
 }
+/* Style: Sign up button */
 
 .signupbutton:hover {
     background-color: #bf4568;
 }
+/* Style: Sign up button interactivity */
 
 @media only screen and (max-width: 600px) {
+    /* Style: Mobile version */
     header {
     margin: -10px -10px 0px -10px;
     padding: 2px 5%;;
@@ -201,7 +226,7 @@ input[type="number"],
 
     .signup {
         width: 600px;
-        height: 364px;
+        height: 480px;
         text-align: center;
         margin: 260px 0px 0px -9px;
         border-radius: 0px;
@@ -212,22 +237,22 @@ input[type="number"],
     }
 
     .signup h1 {
-        padding: 16px 0px 0px 0px ;
+        padding: 24px 0px 0px 0px ;
     }
     
     .zipcode {
-        margin-top: -13px;
+        margin-top: 5px;
         padding: 0px 0px 0px 60px;
         font-size: 18px;
     }
     
     .email {
-        padding: 5px 0px 0px 60px;       
+        padding: 25px 0px 0px 60px;       
         font-size: 18px;
     }
     
     .password {
-        padding: 5px 0px 0px 60px;     
+        padding: 25px 0px 0px 60px;     
         font-size: 18px;
     }
     
@@ -239,6 +264,6 @@ input[type="number"],
 
     .signupbutton {
         width: 42%;
-        margin-top: 19.5px;
+        margin-top: 37px;
     }
 }
